@@ -1,0 +1,34 @@
+% Encoding: UTF-8
+
+@Book{test2,
+  author    = {De Boor, Carl and De Boor, Carl and Math{\'e}maticien, Etats-Unis and De Boor, Carl and De Boor, Carl},
+  publisher = {Springer-Verlag New York},
+  title     = {A practical guide to splines},
+  year      = {1978},
+  volume    = {27},
+  groups    = {[ADOWNEY2:]},
+  url       = {www.google.com},
+}
+
+@Article{test1,
+  author    = {Ali Bolourchi and Sami F. Masri and Osama J. Aldraihem},
+  journal   = {Computer-Aided Civil and Infrastructure Engineering},
+  title     = {Studies into Computational Intelligence and Evolutionary},
+  year      = {2015},
+  month     = {mar},
+  number    = {5},
+  pages     = {330--346},
+  volume    = {30},
+  doi       = {10.1111/mice.12126},
+  publisher = {Wiley},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
+
+@Comment{jabref-meta: grouping:
+0 AllEntriesGroup:;
+1 StaticGroup:Markings\;2\;1\;\;\;\;;
+2 StaticGroup:[ADOWNEY2:]\;2\;1\;\;\;\;;
+1 StaticGroup:Markings\;2\;1\;\;\;\;;
+2 StaticGroup:[ADOWNEY2:]\;2\;1\;\;\;\;;
+}
