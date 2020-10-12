@@ -1,8 +1,11 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: custom_bibtex_format.aux
-The style file: Downey_NSF_DOI_v2.bst
+The style file: Downey_NSF_DOI_v3.bst
 Database file #1: references.bib
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+You can't pop an empty literal stack for entry test1
+while executing---line 2431 of file Downey_NSF_DOI_v3.bst
 
 Done.
+(There was 1 error message)

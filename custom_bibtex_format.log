@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.4)  11 OCT 2020 14:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.4)  11 OCT 2020 21:54
 entering extended mode
 **./custom_bibtex_format.tex
 (custom_bibtex_format.tex
@@ -1103,8 +1103,13 @@ Package pdftex.def Info: figures/Energy_storage.png  used on input line 115.
 (pdftex.def)             Requested size: 469.75499pt x 93.95078pt.
 
 (custom_bibtex_format.bbl
+Underfull \hbox (badness 1331) in paragraph at lines 25--31
+\T1/txr/m/it/10.95 and In-fras-truc-ture En-gi-neer-ing\T1/txr/m/n/10.95 , vol.
+ 30, no. 5, pp. 330--346, mar 2015, [][On-line]. Avail-able:
+ []
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 35.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 37.
 ) [1
 
 {C:/Users/adowney2/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./figure
@@ -1119,10 +1124,10 @@ Package rerunfilecheck Info: File `custom_bibtex_format.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 145.
  ) 
 Here is how much of TeX's memory you used:
- 20767 strings out of 492450
- 374438 string characters out of 3129740
- 451973 words of memory out of 3000000
- 24646 multiletter control sequences out of 15000+200000
+ 20771 strings out of 492450
+ 374472 string characters out of 3129740
+ 453027 words of memory out of 3000000
+ 24648 multiletter control sequences out of 15000+200000
  34966 words of font info for 77 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,6n,83p,433b,355s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1131,9 +1136,9 @@ ppData/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/rtxr.pfb><C:/Program Files
 /MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts
 /type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/
 utmri8a.pfb>
-Output written on custom_bibtex_format.pdf (1 page, 404969 bytes).
+Output written on custom_bibtex_format.pdf (1 page, 408869 bytes).
 PDF statistics:
- 71 PDF objects out of 1000 (max. 8388607)
- 6 named destinations out of 1000 (max. 500000)
+ 84 PDF objects out of 1000 (max. 8388607)
+ 8 named destinations out of 1000 (max. 500000)
  122 words of extra memory for PDF output out of 10000 (max. 10000000)
 

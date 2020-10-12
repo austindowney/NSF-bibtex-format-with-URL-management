@@ -23,14 +23,29 @@
 
 \bibitem{test1}
 A.~Bolourchi, S.~F. Masri, and O.~J. Aldraihem,
-  ``\href{https://doi.org/10.1111/mice.12126}{Studies into computational
-  intelligence and evolutionary},'' \emph{Computer-Aided Civil and
-  Infrastructure Engineering}, vol.~30, no.~5, pp. 330--346, mar 2015,
-  [Online]. Available: https://doi.org/10.1111/mice.12126.
+  ``\href{https://doi.org/10.1111/mice.12126}{An article with a doi},''
+  \emph{Computer-Aided Civil and Infrastructure Engineering}, vol.~30, no.~5,
+  pp. 330--346, mar 2015,
+  \href{http://dx.doi.org/10.1111/mice.12126}{[Online]. Available:
+  http://dx.doi.org/10.1111/mice.12126}
 
 \bibitem{test2}
+A.~Bolourchi, S.~F. Masri, and O.~J. Aldraihem,
+  ``\href{https://doi.org/10.1111/mice.12126}{An article with a url},''
+  \emph{Computer-Aided Civil and Infrastructure Engineering}, vol.~30, no.~5,
+  pp. 330--346, mar 2015. [Online]. Available:
+  \url{https://doi.org/10.1111/mice.12126}
+
+\bibitem{test3}
+A.~Bolourchi, S.~F. Masri, and O.~J. Aldraihem,
+  ``\href{https://doi.org/10.1111/mice.12126}{An article with a doi and a
+  url},'' \emph{Computer-Aided Civil and Infrastructure Engineering}, vol.~30,
+  no.~5, pp. 330--346, mar 2015. [Online]. Available:
+  \url{https://onlinelibrary.wiley.com/doi/full/10.1111/mice.12126}
+
+\bibitem{test4}
 C.~De~Boor, C.~De~Boor, E.-U. Math{\'e}maticien, C.~De~Boor, and C.~De~Boor,
-  \emph{A practical guide to splines}.\hskip 1em plus 0.5em minus 0.4em\relax
+  \emph{A book with a URL}.\hskip 1em plus 0.5em minus 0.4em\relax
   Springer-Verlag New York, 1978, vol.~27. [Online]. Available:
   \url{www.google.com}
 

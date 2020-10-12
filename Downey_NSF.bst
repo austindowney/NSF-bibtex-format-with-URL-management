@@ -1917,11 +1917,20 @@ cap.status.std
 
 %% "\href{https://doi.org/" doi * "}
 %% "[Online]. Available: https://doi.org/"*doi* 
-
+%% this was in the empty option {"[Online]. Available: https://doi.org/" doi * }
 FUNCTION {format.url}
 { is.use.url
     { url empty$
-      {"[Online]. Available: https://doi.org/" doi * }
+      { this.to.prev.status
+        this.status.std
+        cap.yes 'status.cap :=
+		"\href{http://dx.doi.org/" doi * "}{[Online]. Available: http://dx.doi.org/" * doi * "}" * output
+		punct.no 'this.status.punct :=
+        punct.period 'prev.status.punct :=
+        space.normal 'this.status.space :=
+        space.normal 'prev.status.space :=
+        quote.no 'this.status.quote :=	  
+	  }
       { this.to.prev.status
         this.status.std
         cap.yes 'status.cap :=
@@ -1939,8 +1948,14 @@ FUNCTION {format.url}
   if$
 }
 
-
-
+%% Custom function for DOI
+%%FUNCTION {output.doi}
+%%{ 
+%%    doi empty$
+%%        { skip$ }
+%%        { "\href{http://dx.doi.org/" doi * "}{doi:" * doi * "}" * output }
+%%    if$
+%%}
 
 %%%%%%%%%%%%%%%%%%%%
 %% ENTRY HANDLERS %%

@@ -1,9 +1,9 @@
 % Encoding: UTF-8
 
-@Book{test2,
+@Book{test4,
   author    = {De Boor, Carl and De Boor, Carl and Math{\'e}maticien, Etats-Unis and De Boor, Carl and De Boor, Carl},
   publisher = {Springer-Verlag New York},
-  title     = {A practical guide to splines},
+  title     = {A book with a URL},
   year      = {1978},
   volume    = {27},
   groups    = {[ADOWNEY2:]},
@@ -13,7 +13,7 @@
 @Article{test1,
   author    = {Ali Bolourchi and Sami F. Masri and Osama J. Aldraihem},
   journal   = {Computer-Aided Civil and Infrastructure Engineering},
-  title     = {Studies into Computational Intelligence and Evolutionary},
+  title     = {An article with a DOI},
   year      = {2015},
   month     = {mar},
   number    = {5},
@@ -21,6 +21,34 @@
   volume    = {30},
   doi       = {10.1111/mice.12126},
   publisher = {Wiley},
+}
+
+@Article{test2,
+  author    = {Ali Bolourchi and Sami F. Masri and Osama J. Aldraihem},
+  journal   = {Computer-Aided Civil and Infrastructure Engineering},
+  title     = {An article with a URL},
+  year      = {2015},
+  month     = {mar},
+  number    = {5},
+  pages     = {330--346},
+  volume    = {30},
+  doi       = {10.1111/mice.12126},
+  publisher = {Wiley},
+  url       = {https://doi.org/10.1111/mice.12126},
+}
+
+@Article{test3,
+  author    = {Ali Bolourchi and Sami F. Masri and Osama J. Aldraihem},
+  journal   = {Computer-Aided Civil and Infrastructure Engineering},
+  title     = {An article with a DOI and a URL},
+  year      = {2015},
+  month     = {mar},
+  number    = {5},
+  pages     = {330--346},
+  volume    = {30},
+  doi       = {10.1111/mice.12126},
+  publisher = {Wiley},
+  url       = {https://onlinelibrary.wiley.com/doi/full/10.1111/mice.12126},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
