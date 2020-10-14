@@ -1,6 +1,6 @@
 % Encoding: UTF-8
 
-@Book{test4,
+@Book{test6,
   author    = {De Boor, Carl and De Boor, Carl and Math{\'e}maticien, Etats-Unis and De Boor, Carl and De Boor, Carl},
   publisher = {Springer-Verlag New York},
   title     = {A book with a URL},
@@ -51,7 +51,24 @@
   url       = {https://onlinelibrary.wiley.com/doi/full/10.1111/mice.12126},
 }
 
-@Article{,
+@Book{test5,
+  author    = {Van Zandt, Tracy},
+  publisher = {University of Massachusetts Lowell},
+  title     = {Development of efficient reduced models for multi-body dynamics simulations of helicopter wing missile configurations},
+  year      = {2006},
+  url       = {https://search.proquest.com/docview/305321083?pq-origsite=gscholar\&fromopenview=true},
+}
+
+@Article{test4,
+  author    = {Ali Bolourchi and Sami F. Masri and Osama J. Aldraihem},
+  journal   = {Computer-Aided Civil and Infrastructure Engineering},
+  title     = {An article},
+  year      = {2015},
+  month     = {mar},
+  number    = {5},
+  pages     = {330--346},
+  volume    = {30},
+  publisher = {Wiley},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

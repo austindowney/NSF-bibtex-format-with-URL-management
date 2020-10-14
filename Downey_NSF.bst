@@ -1915,38 +1915,44 @@ cap.status.std
 %% URL
 %% notes: 
 
-%% "\href{https://doi.org/" doi * "}
-%% "[Online]. Available: https://doi.org/"*doi* 
-%% this was in the empty option {"[Online]. Available: https://doi.org/" doi * }
+%% The first clause was empty, so if no URL was there nothing happened. Now it inserts a URL based on the DOI. However, if 
 FUNCTION {format.url}
 { is.use.url
     { url empty$
-      { this.to.prev.status
-        this.status.std
-        cap.yes 'status.cap :=
-		"\href{http://dx.doi.org/" doi * "}{[Online]. Available: http://dx.doi.org/" * doi * "}" * output
-		punct.no 'this.status.punct :=
-        punct.period 'prev.status.punct :=
-        space.normal 'this.status.space :=
-        space.normal 'prev.status.space :=
-        quote.no 'this.status.quote :=	  
-	  }
-      { this.to.prev.status
-        this.status.std
-        cap.yes 'status.cap :=
-        name.url.prefix " " *
-        "\url{" * url * "}" *
-        punct.no 'this.status.punct :=
-        punct.period 'prev.status.punct :=
-        space.normal 'this.status.space :=
-        space.normal 'prev.status.space :=
-        quote.no 'this.status.quote :=
-      }
+		{ doi empty$
+			{ "" 
+			}
+			{ this.to.prev.status
+			this.status.std
+			cap.yes 'status.cap :=
+			"\href{http://dx.doi.org/" doi * "}{[Online]. Available: http://dx.doi.org/" * doi * "}" * output
+			punct.no 'this.status.punct :=
+			punct.period 'prev.status.punct :=
+			space.normal 'this.status.space :=
+			space.normal 'prev.status.space :=
+			quote.no 'this.status.quote :=	  
+			}
+		  if$
+		}
+		{ this.to.prev.status
+			this.status.std
+			cap.yes 'status.cap :=
+			name.url.prefix " " *
+			"\url{" * url * "}" *
+			punct.no 'this.status.punct :=
+			punct.period 'prev.status.punct :=
+			space.normal 'this.status.space :=
+			space.normal 'prev.status.space :=
+			quote.no 'this.status.quote :=
+		}
     if$
     }
     { "" }
   if$
 }
+
+
+
 
 %% Custom function for DOI
 %%FUNCTION {output.doi}

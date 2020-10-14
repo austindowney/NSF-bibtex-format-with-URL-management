@@ -44,10 +44,9 @@ A.~Bolourchi, S.~F. Masri, and O.~J. Aldraihem,
   \url{https://onlinelibrary.wiley.com/doi/full/10.1111/mice.12126}
 
 \bibitem{test4}
-C.~De~Boor, C.~De~Boor, E.-U. Math{\'e}maticien, C.~De~Boor, and C.~De~Boor,
-  \emph{A book with a URL}.\hskip 1em plus 0.5em minus 0.4em\relax
-  Springer-Verlag New York, 1978, vol.~27. [Online]. Available:
-  \url{www.google.com}
+A.~Bolourchi, S.~F. Masri, and O.~J. Aldraihem, ``An article,''
+  \emph{Computer-Aided Civil and Infrastructure Engineering}, vol.~30, no.~5,
+  pp. 330--346, mar 2015.
 
 \bibitem{test5}
 T.~Van~Zandt, \emph{Development of efficient reduced models for multi-body
@@ -55,5 +54,11 @@ T.~Van~Zandt, \emph{Development of efficient reduced models for multi-body
   plus 0.5em minus 0.4em\relax University of Massachusetts Lowell, 2006.
   [Online]. Available:
   \url{https://search.proquest.com/docview/305321083?pq-origsite=gscholar\&fromopenview=true}
+
+\bibitem{test6}
+C.~De~Boor, C.~De~Boor, E.-U. Math{\'e}maticien, C.~De~Boor, and C.~De~Boor,
+  \emph{A book with a URL}.\hskip 1em plus 0.5em minus 0.4em\relax
+  Springer-Verlag New York, 1978, vol.~27. [Online]. Available:
+  \url{www.google.com}
 
 \end{thebibliography}
