@@ -73,6 +73,7 @@
 
 @Article{test7,
   author      = {Pu Ren and Xinyu Chen and Lijun Sun and Hao Sun},
+  journal     = {a online eprint without peer review},
   title       = {An arxiv document with a file},
   year        = {2020},
   date        = {2020-07-01},

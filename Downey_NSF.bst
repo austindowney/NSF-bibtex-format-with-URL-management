@@ -261,6 +261,8 @@ MACRO {dec} {"Dec."}
 %% ENTRY FIELDS %%
 %%%%%%%%%%%%%%%%%%
 
+% added doi and eprint
+
 ENTRY
   { address
     assignee
@@ -272,6 +274,7 @@ ENTRY
 	doi
     edition
     editor
+	eprint
     howpublished
     institution
     intype
@@ -1915,12 +1918,27 @@ cap.status.std
 %% URL
 %% notes: 
 
-%% The first clause was empty, so if no URL was there nothing happened. Now it inserts a URL based on the DOI. However, if 
+
+
+%% The first clause was empty, so if no URL was there nothing happened. Now it inserts a URL based on the DOI.  Note that for the eprint I changed "quote.no 'prev.status.quote :=" to "quote.no 'prev.status.quote :=" to get rid of the hanging quote. 
 FUNCTION {format.url}
 { is.use.url
     { url empty$
 		{ doi empty$
-			{ "" 
+			{ eprint empty$
+				{ "" 
+				}
+				{ this.to.prev.status
+				this.status.std
+				cap.yes 'status.cap :=
+				"\href{https://arxiv.org/pdf/" eprint * "}{ [Online]. Available: https://arxiv.org/pdf/" * eprint * "}" * output
+				punct.no 'this.status.punct :=
+				punct.period 'prev.status.punct :=
+				space.normal 'this.status.space :=
+				space.normal 'prev.status.space :=
+				quote.no 'prev.status.quote :=	  
+				}
+			  if$
 			}
 			{ this.to.prev.status
 			this.status.std
@@ -1951,17 +1969,6 @@ FUNCTION {format.url}
   if$
 }
 
-
-
-
-%% Custom function for DOI
-%%FUNCTION {output.doi}
-%%{ 
-%%    doi empty$
-%%        { skip$ }
-%%        { "\href{http://dx.doi.org/" doi * "}{doi:" * doi * "}" * output }
-%%    if$
-%%}
 
 %%%%%%%%%%%%%%%%%%%%
 %% ENTRY HANDLERS %%

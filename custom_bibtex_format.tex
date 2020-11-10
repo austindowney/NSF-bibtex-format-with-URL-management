@@ -104,27 +104,21 @@
 
 
 
-\section*{Background and Assumptions}	
-
-Some text and a figure to make it look normal.
-		
-		
-	  \begin{figure}[H]
-	      \centering
-	      \vspace{-1ex}
-	      \includegraphics[width=6.5in]{figures/Energy_storage.png}
-	      \caption{An assumed configuration for energy storage devices and their interconnects in a ship, where each storage system may be directly connected a large load.}
-	      \vspace{-1ex}
-	      \label{fig:Energy_storage}
-	  \end{figure}		
-		
-		
-		
-	\section{Formulating a Cost Function}		
-
 	
+		
+		
+		
+	\section{Custom bibtex format}		
 
-Bio-inspired computing has been the subject of significant research in recent years such as evolutionary computing and genetic algorithms \cite{test1,test2,test3,test4,test5,test6} 
+	This is designed to work with Jabref where if you use the auto bibtex generator for a DOI and the arXiv number. However, if there is a URL defined by the bibtex entry this supersedes the auto-generated URL. Also, this bst file does not use full names as you can not always get full names on papers and it looks odd to only have some with full names. All URL are linked, as it the title in the article format, but this should be removed. 
+	
+	Here are some examples \cite{test1,test2,test3,test4,test5,test6,test7,test8}.	
+	
+	\begin{itemize}
+	\item Note that jabref leaves the year blank for a arXiv number. 
+	\item The major changes in the .bst file are on line 1923.
+	\end{itemize}
+	
 	
 	
 	
