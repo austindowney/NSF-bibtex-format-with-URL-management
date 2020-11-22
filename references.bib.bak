@@ -73,7 +73,6 @@
 
 @Article{test7,
   author      = {Pu Ren and Xinyu Chen and Lijun Sun and Hao Sun},
-  journal     = {a online eprint without peer review},
   title       = {An arxiv document with a file},
   year        = {2020},
   date        = {2020-07-01},
@@ -95,6 +94,17 @@
   file        = {:http\://arxiv.org/pdf/2007.00790v3:PDF},
   keywords    = {cs.LG, cs.NA, math.NA, physics.data-an, stat.ML},
   url         = {https://arxiv.org/pdf/1706.02633v2.pdf},
+}
+
+@InCollection{test9,
+  author    = {Koohyar Pooladvand and Cosme Furlong},
+  booktitle = {Conference Proceedings of the Society for Experimental Mechanics Series},
+  publisher = {Springer International Publishing},
+  title     = {A paper with an ``underscore'' in the DOI},
+  year      = {2016},
+  month     = {nov},
+  pages     = {45--54},
+  doi       = {10.1007/978-3-319-41766-0_6},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

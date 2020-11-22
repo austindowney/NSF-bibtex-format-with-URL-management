@@ -21,77 +21,15 @@
 \usepackage{tabu}
 \usepackage{float}
 \usepackage{booktabs}
+
+
+
+
 \usepackage{url}
-%\usepackage{arydshln}		% added for \hdashline
-\usepackage[table,pdftex,dvipsnames]{xcolor}
 \usepackage[T1]{fontenc}
-\usepackage{xargs} % Use more than one optional parameter in a new commands
-%\usepackage[pdftex,dvipsnames]{xcolor}
-% packages added by Austin Downey for the maths
-\usepackage{amsbsy} % added to use \pmb or poor mans bold
-\usepackage{txfonts} % added for \muup and other upright greek letters
-\usepackage{upgreek}
 \usepackage[hidelinks]{hyperref}		% added for custom .bst file, as explained here. https://tex.stackexchange.com/questions/67444/doi-in-ieeetran-bibliography
 
 
-\usepackage[colorinlistoftodos,prependcaption,textsize=footnotesize]{todonotes}		% 
-
-
-%\todo{\linespread{1}\tiny Could add a discussion on effects of oxygen in autoxidation, page 19 Liu thesis. \par}
-
-\newcommand{\note}[1]{\todo[]{\linespread{1}\footnotesize #1 \par}}
-\newcommand{\todogreen}[1]{\todo[color=green!40]{#1}}
-\newcommand{\todoblue}[1]{\todo[color=blue!40]{#1}}
-
-% adjust the spacing around section titles
-\usepackage{titlesec}
-\titlespacing*{\section}
-{0pt}{2ex}{0.8ex}
-\titlespacing*{\subsection}
-{0pt}{1ex}{0.8ex}
-\titlespacing*{\subsubsection}
-{0pt}{0.8ex}{0.4ex}
-
-
-\newcommand{\tb}[1]{\textbf{#1}}
-\newcommand{\eq}[1]{\begin{equation}{#1}\end{equation}}
-\newcommand{\eqs}[1]{\begin{equation}\begin{split}{#1}\end{split}\end{equation}}
-
-
-\usepackage{color} % color added for editing
-\newcommand{\bl}[1]{\textcolor[rgb]{0.00,0.00,1.00}{#1}}
-\newcommand{\gr}[1]{\textcolor[rgb]{0.00,0.50,0.00}{#1}}
-\newcommand{\rd}[1]{\textcolor[rgb]{0.75,0.00,0.00}{#1}}
-\newcommand{\tl}[1]{\textcolor[rgb]{0,0.6,0.60}{#1}}
-
-
-\newcommand{\thrustsection}[2]{\noindent \textbf{Task #1:}{ \textbf{#2}}}
-\newcommand{\tasksection}[2]{\noindent \emph{Task #1:}{ \emph{#2}}}
-
-%\DeclareMathAlphabet{\mathpzc}{OT1}{pzc}{m}{it}
-%\newcommand\myrightarrowline{\mathrel{\ooalign{$\rightarrow$\cr%
-% \kern-.15ex\raise.275ex\hbox{\scalebox{1}[0.522]{$\mid$}}\cr}}}
-
-%\usepackage{setspace}
-%\setstretch{1.5} % Change the line spacing, I think 1.2 is the same as Words 1.5 spacing.
-
-%\presetkeys{todonotes}{size=\setstretch{1}\selectfont}{}
-
-
-
-
-%\usepackage{fancyhdr}
-%
-%%\usepackage{titleps}
-%\pagestyle{fancy}
-%\fancyhead[L]{}
-%%\fancyhead[R]{}
-%\fancypagestyle{firstpage}{%
-%  \lhead{\textbf{Topic Area/Program:} Dynamic Data and Information Processing \\
-%  \textbf{Program Officer:} Dr. Erik Blasch, AFOSR/RTA2}
-%}
-%\fancyfoot{}
-%\fancyfoot[R]{Page \thepage}
 
 
 \begin{document}
@@ -112,7 +50,17 @@
 
 	This is designed to work with Jabref where if you use the auto bibtex generator for a DOI and the arXiv number. However, if there is a URL defined by the bibtex entry this supersedes the auto-generated URL. Also, this bst file does not use full names as you can not always get full names on papers and it looks odd to only have some with full names. All URL are linked, as it the title in the article format, but this should be removed. 
 	
-	Here are some examples \cite{test1,test2,test3,test4,test5,test6,test7,test8}.	
+	
+	You must use <\textbackslash usepackage[hidelinks]\{hyperref\}> must be used for the make links hyperlinks
+	
+	Underscores ``\_'' in the DOI entry will break the bibtex compile, you must insert a backslash (e.g., \textbackslash \_) by hand in the .bib file. 
+	
+	
+	
+	
+	
+	
+	Here are some examples \cite{test1,test2,test3,test4,test5,test6,test7,test8,test9}.	
 	
 	\begin{itemize}
 	\item Note that jabref leaves the year blank for a arXiv number. 
