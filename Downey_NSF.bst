@@ -1916,11 +1916,7 @@ cap.status.std
 
 
 %% URL
-%% notes: 
-
-
-
-%% The first clause was empty, so if no URL was there nothing happened. Now it inserts a URL based on the DOI.  Note that for the eprint I changed "quote.no 'prev.status.quote :=" to "quote.no 'prev.status.quote :=" to get rid of the hanging quote. 
+%% notes: The first clause was empty, so if no URL was there nothing happened. Now it inserts a URL based on the DOI.  Note that for the eprint I changed "quote.no 'prev.status.quote :=" to "quote.no 'prev.status.quote :=" to get rid of the hanging quote. 
 FUNCTION {format.url}
 { is.use.url
     { url empty$
