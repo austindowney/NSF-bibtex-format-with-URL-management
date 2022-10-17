@@ -1,11 +1,10 @@
-# custom_bibtex_format
-Austin's custom bibtex format for NSF proposals. This started out as IEEE.bst.
+# NSF BibTeX format with URL management
+Austin's custom BibTeX format for NSF proposals. This is an extended version of the IEEE.bst citation style.
 
 <\usepackage[hidelinks]{hyperref}> must be used for the make links hyperlinks
 
 
 The following changes have been made:
-
 1. Hyperlinks to titles in articles
 1. URL links are provided
 1. If URL is empty and a DOI is provided, a link is generated from the DOI.
