@@ -4,3 +4,5 @@ custom_bibtex_format.aux
 *.log
 *.out
 *.blg
+*.gz
+*.bak
