@@ -1,6 +1,8 @@
 
-custom_bibtex_format.aux
+*.aux
 *.bbl
 *.log
 *.out
 *.blg
+*.gz
+*.bak
