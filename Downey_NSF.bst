@@ -1430,7 +1430,7 @@ FUNCTION {format.article.title}
     }
   if$
   "title" bibinfo.check
-  doi empty$ {} { "\href{https://doi.org/" doi * "}{" * swap$ * "}" * } if$
+  doi empty$ {} { "\href{\detokenize{https://doi.org/" doi * "}}{" * swap$ * "}" * } if$
   duplicate$ empty$ 'skip$
     { quote.close 'this.status.quote :=
       is.last.char.not.punct
@@ -1924,35 +1924,37 @@ FUNCTION {format.url}
 			{ eprint empty$
 				{ "" 
 				}
-				{ this.to.prev.status
-				this.status.std
-				cap.yes 'status.cap :=
-				"\href{https://arxiv.org/pdf/" eprint * "}{ [Online]. Available: https://arxiv.org/pdf/" * eprint * "}" * output
-				punct.no 'this.status.punct :=
-				punct.period 'prev.status.punct :=
-				space.normal 'this.status.space :=
-				space.normal 'prev.status.space :=
-				quote.no 'prev.status.quote :=	  
-				}
+                { this.to.prev.status
+                this.status.std
+                cap.yes 'status.cap :=
+                % arXiv case: detokenize link target, show nolinkurl visible text
+                "\href{\detokenize{https://arxiv.org/pdf/" eprint * "}}{[Online]. Available: \nolinkurl{https://arxiv.org/pdf/" * eprint * "}}" * output
+                punct.no 'this.status.punct :=
+                punct.period 'prev.status.punct :=
+                space.normal 'this.status.space :=
+                space.normal 'prev.status.space :=
+                quote.no 'prev.status.quote :=
+                }
 			  if$
 			}
-			{ this.to.prev.status
-			this.status.std
-			cap.yes 'status.cap :=
-			"\href{http://dx.doi.org/" doi * "}{[Online]. Available: http://dx.doi.org/" * doi * "}" * output
-			punct.no 'this.status.punct :=
-			punct.period 'prev.status.punct :=
-			space.normal 'this.status.space :=
-			space.normal 'prev.status.space :=
-			quote.no 'this.status.quote :=	  
-			}
+            { this.to.prev.status
+            this.status.std
+            cap.yes 'status.cap :=
+            % DOI case: canonical https target and visible nolinkurl
+            "\href{\detokenize{https://doi.org/" doi * "}}{[Online]. Available: \nolinkurl{https://doi.org/" * doi * "}}" * output
+            punct.no 'this.status.punct :=
+            punct.period 'prev.status.punct :=
+            space.normal 'this.status.space :=
+            space.normal 'prev.status.space :=
+            quote.no 'this.status.quote :=
+            }
 		  if$
 		}
 		{ this.to.prev.status
 			this.status.std
 			cap.yes 'status.cap :=
 			name.url.prefix " " *
-			"\url{" * url * "}" *
+			"\href{\detokenize{" * url * "}}{\nolinkurl{" * url * "}}" * 
 			punct.no 'this.status.punct :=
 			punct.period 'prev.status.punct :=
 			space.normal 'this.status.space :=
