@@ -1,5 +1,5 @@
 # NSF BibTeX format with URL management
-Austin's custom BibTeX format for NSF proposals. This is an extended version of the IEEE.bst citation style.
+Austin Downey's BibTeX format for NSF proposals. This is an extended version of the IEEE.bst citation style.
 
 <\usepackage[hidelinks]{hyperref}> must be used for the make links hyperlinks
 
